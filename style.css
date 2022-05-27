@@ -23,6 +23,10 @@
     --icon_bg: rgb(172, 172, 172);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 html {
     font-size: 62.5%;
     /* 1rem=10px */
@@ -786,6 +790,7 @@ footer a:hover,
         transform: translateX(0%);
         opacity: 1;
         visibility: visible;
+        position: fixed;
         pointer-events: auto;
         z-index: 99;
     }
@@ -794,6 +799,9 @@ footer a:hover,
     }
     .active .mobile_navbar_btn .mobile_navbar_icon[name="close-outline"] {
         display: block;
+        position: fixed;
+        right: 5rem;
+        top: 2.5rem;
     }
     .grid {
         gap: 3rem;

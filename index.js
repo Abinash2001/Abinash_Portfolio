@@ -65,6 +65,7 @@ scrollElement.addEventListener('click', scroll_Top_Funtion);
 // =================================== -->
 const observer = new IntersectionObserver((entries) => {
     const ent = entries[0];
+    console.log(ent);
     !ent.isIntersecting ? document.body.classList.add('sticky') : document.body.classList.remove('sticky');
 }, { root: null, threshold: 0 });
 observer.observe(hero_section);
