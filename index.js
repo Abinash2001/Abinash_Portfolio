@@ -1,9 +1,22 @@
+AOS.init({
+    offset: 120,
+    duration: 2500,
+});
+
+
+
 // <!-- ================================== 
 // responsive mediaqueries navbar
 // =================================== -->
 const mobile_nav = document.querySelector('.mobile_navbar_btn');
 const headerElement = document.querySelector('.header');
 mobile_nav.addEventListener('click', () => {
+    headerElement.classList.toggle('active');
+});
+
+//edit
+const navClick = document.querySelector('.navbar');
+navClick.addEventListener('click', () => {
     headerElement.classList.toggle('active');
 });
 

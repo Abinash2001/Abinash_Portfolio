@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script defer src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <title>Abinash Portfolio</title>
 </head>
 
@@ -23,15 +25,15 @@
         <nav class="navbar">
             <ul class="navbarlist">
                 <li>
-                    <a href="index.html" class="navbar_link home_link">HOME</a></li>
+                    <a href="#section_hero" class="navbar_link home_link">HOME</a></li>
                 <li>
-                    <a href="about.html" class="navbar_link about_link">ABOUT ME</a></li>
+                    <a href="#section_bioData" class="navbar_link about_link">ABOUT ME</a></li>
                 <li>
-                    <a href="project.html" class="navbar_link about_link">PROJECTS</a></li>
+                    <a href="#latest_work_section" class="navbar_link about_link">PROJECTS</a></li>
                 <li>
-                    <a href="services.html" class="navbar_link service_link">SERVICES</a></li>
+                    <a href="#service_section" class="navbar_link service_link">SERVICES</a></li>
                 <li>
-                    <a href="contact.html" class="navbar_link contact_link">CONTACT US</a></li>
+                    <a href="#contact_section" class="navbar_link contact_link">CONTACT US</a></li>
             </ul>
         </nav>
         <div class="mobile_navbar_btn">
@@ -43,22 +45,26 @@
             main hero section
     =================================== -->
     <main>
-        <section class="section section_hero">
+        <section class="section section_hero" id="section_hero">
             <div class="container grid grid_two_column">
                 <div class="section_hero_data">
                     <p class="hero_top_data">
                         this is me
                     </p>
                     <h1 class="hero_heading">Abinash kumar chourasia</h1>
-                    <p class="hero_para">
+                    <!-- <p class="hero_para">
                         I am a front-end developer,Competitive Programer and UI designer. I am pursuing engineering specialised in Computer Science and engineering from HOOGHLY ENGINEERING & TECHNOLOGY COLLEGE (HETC).
+                    </p> -->
+                    <p class="hero_para">
+                        I'm Abinash Chourasia pursuing Bechelor of technology specialised in Computer science and engineering from Hooghly Engineering and Technology college. I am a front end developer, competitive programmer as well as UI designer. I am representing all of
+                        that I have learnt and accomplished as an engineering student.
                     </p>
                     <div>
                         <a href="contact.html" class="btn btn_hireme">Hire me</a>
                     </div>
                 </div>
                 <div class="section_hero_img">
-                    <img class="hero_img" src="images/1.jpeg" alt="This is me Abinask kumar chourasia">
+                    <img class="hero_img" src="images/3.jpeg" alt="This is me Abinask kumar chourasia">
                 </div>
             </div>
         </section>
@@ -68,13 +74,16 @@
     =================================== -->
     <section class="section section_bioData" id="section_bioData">
         <div class="container grid grid_two_column">
-            <div class="bio_image">
+            <div class="bio_image" data-aos="slide-right">
                 <img src="images/2.jpeg" alt="my bio data image">
             </div>
-            <div class="bioData">
+            <div class="bioData" data-aos="slide-left">
                 <h2 class="common_heading">My Bio-Data</h2>
+                <!-- <p class="bio_para">
+                    I am a quick learner and hard worker, intrested in learning new skills. I know several programming languages C, JAVA, C++, PHP, MYSQL and ORACLE SQL and also I know HTML, CSS and JS.
+                </p> -->
                 <p class="bio_para">
-                    I am quick learner and hard worker. I am intrested in learning new programming languages. I know several programming languages C, JAVA, C++, PHP, MYSQL and ORACLE SQL and also I know HTML, CSS and JS.
+                    I am passionate about UI/UX design and Web Design. I am a quick learner and hard worker, intrested in learning new skills. Always ready to new technologies. Having Strong command in Programming Languages (C , C++ , Java , Python) along with 2<span>&#9733</span>                    at Codechef.
                 </p>
                 <div class="bio_data_stats">
                     <div class="bio_stats">
@@ -104,12 +113,30 @@
                     <div class="bio_stats">
                         <h3>JAVA</h3>
                         <div class="bio_progress_bar bio_progress_5">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                    <div class="bio_stats">
+                        <h3>C++</h3>
+                        <div class="bio_progress_bar bio_progress_6">
                             <span>75%</span>
                         </div>
                     </div>
                     <div class="bio_stats">
                         <h3>PHP</h3>
-                        <div class="bio_progress_bar bio_progress_6">
+                        <div class="bio_progress_bar bio_progress_7">
+                            <span>70%</span>
+                        </div>
+                    </div>
+                    <div class="bio_stats">
+                        <h3>JS</h3>
+                        <div class="bio_progress_bar bio_progress_8">
+                            <span>70%</span>
+                        </div>
+                    </div>
+                    <div class="bio_stats">
+                        <h3>TAILWIND</h3>
+                        <div class="bio_progress_bar bio_progress_9">
                             <span>70%</span>
                         </div>
                     </div>
@@ -124,46 +151,52 @@
             Latest work section
     =================================== -->
     <section class="section section_latest_work" id="latest_work_section">
-        <div class="container">
+        <div class="container" data-aos="slide-left">
             <h2 class="common_heading">latest work</h2>
             <p class="work_para">
                 Recently I am completed some projects based on website using HTML,CSS and JS and also some UI design using FIGMA.
             </p>
         </div>
-        <div class="work_btns">
+        <div class="work_btns" data-aos="slide-right">
             <div class="btn work_btn" data-btn-num="1">website</div>
             <div class="btn work_btn" data-btn-num="2">figma</div>
             <div class="btn work_btn" data-btn-num="3">coding</div>
         </div>
-        <div class="container grid grid_three_column portfolio_img">
+        <div class="container grid grid_three_column portfolio_img" data-aos="slide-left">
             <div class="img_overlay work_btn--1">
-                <img src="images/pic1.jpg" alt="my work">
+                <img src="images/foodOrder.png" alt="my work">
                 <div class="overlay">
-                    <a href="https://abinash2001.github.io/food-delivery/" target="_blank" class="common_heading">project 1</a>
+                    <a href="https://abinash2001.github.io/food-delivery/" target="_blank" class="common_heading">Food Ordering</a>
+                </div>
+            </div>
+            <div class="img_overlay work_btn--1">
+                <img src="images/gym.jpg" alt="my work">
+                <div class="overlay">
+                    <a href="https://abinash2001.github.io/fitness-gym/" target="_blank" class="common_heading">Fitness Gym</a>
                 </div>
             </div>
             <div class="img_overlay work_btn--1">
                 <img src="images/pic1.jpg" alt="my work">
                 <div class="overlay">
-                    <a href="https://abinash2001.github.io/fitness-gym/" target="_blank" class="common_heading">project 2</a>
-                </div>
-            </div>
-            <div class="img_overlay work_btn--1">
-                <img src="images/pic1.jpg" alt="my work">
-                <div class="overlay">
-                    <a href="https://abinash2001.github.io/payment-form/" target="_blank" class="common_heading">project 3</a>
+                    <a href="https://abinash2001.github.io/payment-form/" target="_blank" class="common_heading">Payment Form</a>
                 </div>
             </div>
             <div class="img_overlay work_btn--1 work_btn--2">
-                <img src="images/pic1.jpg" alt="my work">
+                <img src="images/login.PNG" alt="my work">
                 <div class="overlay">
-                    <a href="https://abinash2001.github.io/login_Form/" target="_blank" class="common_heading">project 4</a>
+                    <a href="https://abinash2001.github.io/login_Form/" target="_blank" class="common_heading">Login Form</a>
                 </div>
             </div>
             <div class="img_overlay work_btn--1">
-                <img src="images/pic1.jpg" alt="my work">
+                <img src="images/card.PNG" alt="my work">
                 <div class="overlay">
-                    <a href="https://abinash2001.github.io/card/" target="_blank" class="common_heading">project 5</a>
+                    <a href="https://abinash2001.github.io/card/" target="_blank" class="common_heading">Payment Card</a>
+                </div>
+            </div>
+            <div class="img_overlay work_btn--1">
+                <img src="images/keepNote.PNG" alt="my work">
+                <div class="overlay">
+                    <a href="https://abinash2001.github.io/keep_note/" target="_blank" class="common_heading">Keep Note</a>
                 </div>
             </div>
         </div>
@@ -171,28 +204,34 @@
     <!-- ================================== 
                 service section
     =================================== -->
-    <section class="section service_section">
+    <section class="section service_section" id="service_section">
         <div class="container">
-            <h2 class="common_heading">service offers</h2>
+            <h2 class="common_heading" data-aos="slide-left">service offers</h2>
             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu nunc ut tellus nec. Nisi pretium duis commodo vel massa. Tellus volutpat lacinia mauris arcu vel duis.</p> -->
 
             <!-- services offers card-->
             <div class="container grid grid_three_column ">
-                <div class="service_box">
+                <div class="service_box" data-aos="slide-right">
                     <ion-icon name="desktop-outline" class="service_icon"></ion-icon>
-                    <h3>web design</h3>
+                    <h3>Web Design</h3>
                     <p>Web design refer to design of websites that are displayed on the internet. We design used to focused on designing websites for desktop browsers, mobile and tablet browsers.
                     </p>
                 </div>
-                <div class="service_box">
+                <div class="service_box" data-aos="slide-up">
                     <ion-icon name="code-slash-outline" class="service_icon"></ion-icon>
                     <h3>Competitive Programer</h3>
                     <p>Competitive programming is a mind sport usually held over the internet or a local network, involving participants trying to program according to provided specifications.</p>
                 </div>
-                <div class="service_box">
+                <div class="service_box" data-aos="slide-left">
                     <ion-icon name="aperture-outline" class="service_icon"></ion-icon>
-                    <h3>web development</h3>
+                    <h3>Web Development</h3>
                     <p>Web development, also known as website development, refers to the tasks associated with creating , building and maintainting websites and web applications that run online on browser.</p>
+                </div>
+                <div class="service_box" data-aos="slide-right">
+                    <ion-icon name="aperture-outline" class="service_icon"></ion-icon>
+                    <h3>UI-UX Design</h3>
+                    <p>A user experience (UX) designer works on a team to create products that provide meaningful and enjoyable experiences for users. UI (user interface) designers build interfaces in software or other computerized devices.
+                    </p>
                 </div>
             </div>
         </div>
@@ -200,7 +239,7 @@
     <!-- ================================== 
             freelancing section 
     =================================== -->
-    <section class="section freelancing_section">
+    <section class="section freelancing_section" data-aos="slide-right">
         <div class="overlay"></div>
         <div class="container">
             <h2>I am <span>available</span> for freelancing</h2>
@@ -211,12 +250,12 @@
     <!-- ================================== 
             contact us section 
     =================================== -->
-    <section class="section contact_section">
-        <div class="container">
+    <section class="section contact_section" id="contact_section">
+        <div class="container" data-aos="slide-left">
             <h2 class="common_heading">contact us</h2>
             <p class="work_para">Feel free to contact me. You can connect with me on social media accounts and also you can drop a mail on my E-Mail ot you can connect me through the form given below.</p>
         </div>
-        <div class="section_contact_main contact_container">
+        <div class="section_contact_main contact_container" data-aos="slide-right">
             <form action="https://formspree.io/f/myyolyra" method="POST">
                 <div class="grid grid_two_column">
                     <div>
@@ -244,7 +283,7 @@
     <!-- ================================== 
             footer section 
     =================================== -->
-    <footer class="section section_footer">
+    <footer class="section section_footer" data-aos="slide-right">
         <div class="container grid grid_four_column">
             <div class="footer_about">
                 <h3>About</h3>
@@ -336,6 +375,9 @@
                 <a href="https://www.linkedin.com/in/abinash-kumar-chourasia-a0775a197/" target="_blank">
                     <ion-icon class="icons" name="logo-linkedin"></ion-icon>
                 </a>
+                <a href="https://wa.me/8013070719" target="_blank">
+                    <ion-icon class="icons" name="logo-whatsapp"></ion-icon>
+                </a>
             </div>
             <div class="footer_credits">
                 <p>Copyright© 2022 All rights reserved | This template is made by Abinash Kumar Chourasia</p>
@@ -348,6 +390,12 @@
     <div class="scrollTop">
         <ion-icon class="scroll" name="arrow-up-outline"></ion-icon>
     </div>
+    <!-- <script>
+        // AOS.init({
+        //     offset: 120,
+        //     duration: 2500,
+        // });
+    </script> -->
 </body>
 
 </html>

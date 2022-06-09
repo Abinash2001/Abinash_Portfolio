@@ -31,6 +31,7 @@ html {
     font-size: 62.5%;
     /* 1rem=10px */
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -271,6 +272,12 @@ li {
 .hero_img {
     max-width: 70%;
     box-shadow: 0 0 1.5rem 1.5rem var(--helper);
+    /* box-shadow: -1.5rem -1.5rem 0 0 var(--helper); */
+    /* box-shadow: var(--shadowSuppose); */
+}
+
+.hero_para {
+    text-align: left;
 }
 
 
@@ -337,10 +344,25 @@ li {
 
 .bio_progress_5::before {
     content: "";
-    width: 75%;
+    width: 80%;
 }
 
 .bio_progress_6::before {
+    content: "";
+    width: 75%;
+}
+
+.bio_progress_7::before {
+    content: "";
+    width: 70%;
+}
+
+.bio_progress_8::before {
+    content: "";
+    width: 70%;
+}
+
+.bio_progress_9::before {
     content: "";
     width: 70%;
 }
@@ -378,10 +400,22 @@ li {
 }
 
 .bio_progress_5 span {
-    left: 71%;
+    left: 76%;
 }
 
 .bio_progress_6 span {
+    left: 71%;
+}
+
+.bio_progress_7 span {
+    left: 66%;
+}
+
+.bio_progress_8 span {
+    left: 66%;
+}
+
+.bio_progress_9 span {
     left: 66%;
 }
 
@@ -427,6 +461,7 @@ li {
 
 .portfolio_img img {
     width: 100%;
+    height: 100%;
     position: relative;
     overflow: hidden;
     border-radius: 1.5rem;
