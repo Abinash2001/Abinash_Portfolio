@@ -1,6 +1,8 @@
 AOS.init({
     offset: 120,
     duration: 2500,
+    once: true,
+    easing: 'ease',
 });
 
 
