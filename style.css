@@ -349,12 +349,12 @@ li {
 
 .bio_progress_6::before {
     content: "";
-    width: 75%;
+    width: 80%;
 }
 
 .bio_progress_7::before {
     content: "";
-    width: 70%;
+    width: 75%;
 }
 
 .bio_progress_8::before {
@@ -365,6 +365,16 @@ li {
 .bio_progress_9::before {
     content: "";
     width: 70%;
+}
+
+.bio_progress_10::before {
+    content: "";
+    width: 70%;
+}
+
+.bio_progress_11::before {
+    content: "";
+    width: 50%;
 }
 
 .bio_progress_bar span {
@@ -404,11 +414,11 @@ li {
 }
 
 .bio_progress_6 span {
-    left: 71%;
+    left: 76%;
 }
 
 .bio_progress_7 span {
-    left: 66%;
+    left: 71%;
 }
 
 .bio_progress_8 span {
@@ -417,6 +427,14 @@ li {
 
 .bio_progress_9 span {
     left: 66%;
+}
+
+.bio_progress_10 span {
+    left: 66%;
+}
+
+.bio_progress_11 span {
+    left: 46%;
 }
 
 
